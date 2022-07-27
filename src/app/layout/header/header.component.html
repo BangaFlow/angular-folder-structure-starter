@@ -1,0 +1,31 @@
+<nav class="header-nav">
+  <img
+    class="logo"
+    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Dyson_logo.svg"
+    alt="LOGO"
+  />
+  <ul class="menu">
+    <li>
+      <a class="menu-item" [routerLink]="['main']" routerLinkActive="active">Startseit</a>
+    </li>
+    <li>
+      <a class="menu-item" [routerLink]="['health-check']" routerLinkActive="active">Mein Daten</a>
+    </li>
+    <li>
+      <a class="menu-item" [routerLink]="['personal-preferences']" routerLinkActive="active">Aktivitäten</a>
+    </li>
+    <li>
+      <a class="menu-item" [routerLink]="['calendar']" routerLinkActive="active">Helf</a>
+    </li>
+  </ul>
+  <div class="profile">
+    <span
+      class="profile-text"
+    >{{ user?.name ? user?.name : "Khaled Saidi" }}</span>
+    <img
+      src="https://static.vecteezy.com/system/resources/previews/002/002/403/large_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+      alt="profile_avatar"
+      class="profile-avatar"
+    />
+  </div>
+</nav>

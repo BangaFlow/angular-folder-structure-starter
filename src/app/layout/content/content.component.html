@@ -1,0 +1,13 @@
+<div  class="d-flex flex-fill flex-column" [style.minHeight]="'100vh'">
+
+  <app-header [user]="null | async"></app-header>
+
+  <div class="d-flex flex-fill flex-column">
+    <main class="container-content">
+      <router-outlet class="router-flex"></router-outlet>
+    </main>
+  </div>
+
+  <app-footer></app-footer>
+
+</div>

@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap'
+
+:root
+  --blue-dark: #32325A
+  --blue-soft: #6E8CBE
+  --blue-sky: #AACDDC
+
+  // Red Palette
+  --red-cherry: #AF1E28
+  --red-orange: #FF4628
+  --red-salamon: #FF7D46
+
+  // Green Palette
+  --green-dark: #5A9137
+  --green-leaf: #6EC328
+  --greeen-lime: #D2EB82
+
+  // Yellow Palette
+  --yellow-dark: #CDA519
+  --yellow-gold: #FFBE28
+  --yellow-sunny: #F0DC50
+
+router-outlet.router-flex + *
+  display: flex
+  flex: 1 1 auto
+  flex-direction: column
